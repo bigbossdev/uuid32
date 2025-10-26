@@ -1,8 +1,12 @@
 # Changelog
 
+## [1.0.0] - 2025-01-27
+
+- Stable release - no breaking changes from 0.1.0
+- Production ready
+
 ## [0.1.0] - 2025-01-27
 
-### Added
 - Initial release of @bboss/uuid32
 - UUID to Crockford Base32 encoding/decoding
 - `generateBase32()`, `encode()`, `decode()`, `isValidBase32()` functions
