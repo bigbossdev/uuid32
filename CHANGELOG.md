@@ -1,11 +1,11 @@
 # Changelog
 
-## [1.0.0] - 2025-01-27
+## [1.0.0] - 2025-10-27
 
 - Stable release - no breaking changes from 0.1.0
 - Production ready
 
-## [0.1.0] - 2025-01-27
+## [0.1.0] - 2025-10-27
 
 - Initial release of @bboss/uuid32
 - UUID to Crockford Base32 encoding/decoding
