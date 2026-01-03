@@ -1,6 +1,6 @@
 {
     "name": "@bboss/uuid32",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "UUID to Crockford Base32 encoding/decoding library for Node.js",
     "keywords": [
         "uuid",
