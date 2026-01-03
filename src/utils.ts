@@ -42,12 +42,3 @@ export function normalizeUuid(uuid: string): string {
 export function formatUuid(uuid: string): string {
     return `${uuid.slice(0, 8)}-${uuid.slice(8, 12)}-${uuid.slice(12, 16)}-${uuid.slice(16, 20)}-${uuid.slice(20, 32)}`;
 }
-
-/**
- * Checks if running in browser environment
- */
-export function checkNodeEnvironment(): void {
-    if (typeof (globalThis as any).window !== 'undefined' || typeof (globalThis as any).document !== 'undefined') {
-        throw new Error('@bboss/uuid32 is Node.js only and cannot run in browser environments');
-    }
-}

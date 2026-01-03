@@ -1,15 +1,12 @@
 import { randomUUID } from 'crypto';
-import { 
-    BASE32_CHARS, 
-    isValidUuid, 
-    isValidBase32, 
-    normalizeUuid, 
-    formatUuid, 
-    checkNodeEnvironment 
+import {
+    BASE32_CHARS,
+    isValidUuid,
+    isValidBase32,
+    normalizeUuid,
+    formatUuid
 } from './utils';
 
-// Check environment on module load
-checkNodeEnvironment();
 
 /**
  * Encodes a UUID to Crockford Base32 string
