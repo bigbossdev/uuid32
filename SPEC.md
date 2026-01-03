@@ -14,7 +14,7 @@ UUID(Universally Unique Identifier)를 Crockford Base32로 인코딩/디코딩�
 - **라이선스**: MIT
 - **언어**: TypeScript
 - **의존성**: Zero dependency
-- **플랫폼**: Node.js 전용 (브라우저 미지원)
+- **플랫폼**: Node.js 및 브라우저 환경 지원
 - **Node.js 지원**: Node.js 16.0.0+ (crypto.randomUUID() 안정 지원)
 
 ## 핵심 기능
@@ -73,15 +73,13 @@ const isValidBase32_2 = uuid32.isValidBase32('invalid@base32!');
 - 잘못된 입력 시 명확한 에러 메시지
 
 ### 플랫폼 요구사항
-- **Node.js 전용**: 브라우저 환경에서 실행 불가
-- **crypto 모듈 의존**: Node.js 내장 crypto.randomUUID() 필수
-- **환경 검증**: 브라우저 환경 감지 시 에러 발생
+- **의존성**: `crypto.randomUUID()` API를 지원하는 환경 필요 (예: Node.js 16+ 또는 최신 브라우저)
 
 ### 성능 요구사항
 - **변환 속도**: 10,000회/초 이상 (현재 테스트: 1000회/70ms)
 - **메모리 사용량**: 최소화
 - **Zero dependency**: 외부 라이브러리 의존성 없음
-- **Node.js 내장 API**: crypto.randomUUID() 활용
+- **API 활용**: crypto.randomUUID() 활용
 
 ### 개발 도구
 - **테스트**: Jest + ts-jest
@@ -145,8 +143,3 @@ const isValidBase32_2 = uuid32.isValidBase32('invalid@base32!');
 - **타입 파일**: `dist/index.d.ts`
 - **Node.js 지원**: 16.0.0+ (crypto.randomUUID() 안정 지원)
 - **사용 방식**: `require('@bboss/uuid32')` 또는 `import` 모두 가능
-
-### 환경 제한
-- **Node.js 전용**: 브라우저 환경에서 실행 불가
-- **환경 검증**: 런타임에서 브라우저 환경 감지 및 에러 처리
-- **Zero Dependency**: 외부 라이브러리 의존성 없음

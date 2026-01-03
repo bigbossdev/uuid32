@@ -1,11 +1,11 @@
 # @bboss/uuid32
 
-A lightweight TypeScript library for encoding and decoding UUIDs to/from Crockford Base32 strings, designed exclusively for Node.js environments.
+A lightweight TypeScript library for encoding and decoding UUIDs to/from Crockford Base32 strings.
 
 ## Features
 
 - 🚀 **Fast & Lightweight**: Zero dependencies, optimized for performance
-- 🔒 **Node.js Only**: Built specifically for server-side applications
+- 🌐 **Universal**: Works in Node.js and modern browsers
 - 📦 **TypeScript Native**: Full TypeScript support with type definitions
 - 🧪 **Well Tested**: Comprehensive test suite with high coverage
 - 🔧 **Simple API**: Easy-to-use functions for encoding, decoding, and validation
@@ -30,8 +30,7 @@ yarn add @bboss/uuid32
 
 ## Requirements
 
-- Node.js 16.0.0 or higher (requires `crypto.randomUUID()`)
-- **Node.js only** - not compatible with browser environments
+- Requires an environment with `crypto.randomUUID()` support (e.g., Node.js 16+ or modern browsers).
 
 ## Usage
 
